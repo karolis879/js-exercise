@@ -85,3 +85,133 @@ const skaicius3 = 4;
 console.log( daugyba( skaicius1, skaicius2 ) );
 console.log( daugyba( skaicius3, skaicius2 ) );
 console.log( daugyba( skaicius1, skaicius3 ) );
+
+//------------------------
+
+if (vienas > du) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+
+if (vienas < du) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (vienas === du) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (vienas !== du) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (vienas >= du) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (vienas <= du) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+//-------------------------------
+
+const skaiciusIlgis1 = ('Skaiciaus kintamojo ilgis',pirmasSkaicius.length);
+const skaiciusIlgis2 = ('Skaiciaus kintamojo ilgis',antrasSkaicius.length);
+const skaiciusIlgis3 = ('Skaiciaus kintamojo ilgis',treciasSkaicius.length);
+
+//-------------------------------
+
+if (skaiciusIlgis1 > skaiciusIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+
+if (skaiciusIlgis1 < skaiciusIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (skaiciusIlgis1 === skaiciusIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (skaiciusIlgis1 !== skaiciusIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (skaiciusIlgis1 >= skaiciusIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (skaiciusIlgis1 <= skaiciusIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+//-----------------------------------
+
+const sarasoIlgis1 = ('Sarašo ilgis',pirmasSarasas.length);
+const sarasoIlgis2 = ('Sarašo ilgis',antrasSarasas.length);
+const sarasoIlgis3 = ('Sarašo ilgis',treciasSarasas.length);
+
+//----------------------------
+
+if (sarasoIlgis1 > sarasoIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+
+if (sarasoIlgis1 < sarasoIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (sarasoIlgis1 === sarasoIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (sarasoIlgis1 !== sarasoIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (sarasoIlgis1 >= sarasoIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
+if (sarasoIlgis1 <= sarasoIlgis2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kartą');
+}
+
