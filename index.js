@@ -73,8 +73,8 @@ console.log(tusciaFunkcija())
 
 //-----------------------
 
-function daugyba (a, b) {
-    const sandauga =  a * b;
+function daugyba (nuo, iki) {
+    const sandauga =  nuo * iki;
     return sandauga;
 }
 
@@ -215,3 +215,55 @@ if (sarasoIlgis1 <= sarasoIlgis2) {
     console.log('Bandykite dar kartą');
 }
 
+//FOR------------------------------
+
+console.clear()
+
+function sudetis (nuo, iki) {
+let sum = 0;
+    for (let i = nuo; i <= iki; i++) {
+        sum += i
+    }
+    console.log(sum)
+}
+
+console.log(sudetis(0,0));
+console.log(sudetis(0,4));
+console.log(sudetis(574,815));
+console.log(sudetis(-50,50));
+console.log(sudetis(-70,30));
+
+//--------------------------
+
+const stringas = 'abcderf';
+
+for (let i = stringas.length; i >= 0; i--) {
+    console.log(stringas[i])
+}
+
+//-------------------------
+
+console.clear()
+
+
+function dalmuo (nuo, iki, dalyba) {
+    let suma = [];
+    for (let i = nuo; i <= iki; i++) {
+    if (i % dalyba ===0) {
+        suma.push(i)
+    }
+}
+console.log(`Skaičių intervale tarp ${nuo} ir ${iki}, besidalijančių be liekanos iš ${dalyba} yra ${suma.length} vienetai.`)
+}
+
+console.log(dalmuo(0, 11, 3));
+console.log(dalmuo(0, 11, 5));
+console.log(dalmuo(0, 11, 7));
+
+console.log(dalmuo(8, 31, 3));
+console.log(dalmuo(8, 31, 5));
+console.log(dalmuo(8, 31, 7));
+
+console.log(dalmuo(-18, 18, 3));
+console.log(dalmuo(-18, 18, 5));
+console.log(dalmuo(-18, 18, 7));
