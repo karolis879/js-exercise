@@ -63,29 +63,6 @@ console.log(ketvirtasSarasas[4] + ', ', ketvirtasSarasas[3] + ', ', ketvirtasSar
 console.log(penktasSarasas[4] + ', ', penktasSarasas[3] + ', ', penktasSarasas[2] + ', ', penktasSarasas[1] + ', ', penktasSarasas[0]);
 console.log(sestasSarasas[4] + ', ', sestasSarasas[3] + ', ', sestasSarasas[2] + ', ', sestasSarasas[1] + ', ', sestasSarasas[0]);
 
-//---Function------------
-
-function tusciaFunkcija () {
-    return false
-}
-
-console.log(tusciaFunkcija())
-
-//-----------------------
-
-function daugyba (nuo, iki) {
-    const sandauga =  nuo * iki;
-    return sandauga;
-}
-
-const skaicius1 = 2;
-const skaicius2 = 3;
-const skaicius3 = 4;
-
-console.log( daugyba( skaicius1, skaicius2 ) );
-console.log( daugyba( skaicius3, skaicius2 ) );
-console.log( daugyba( skaicius1, skaicius3 ) );
-
 //------------------------
 
 if (vienas > du) {
@@ -267,3 +244,76 @@ console.log(dalmuo(8, 31, 7));
 console.log(dalmuo(-18, 18, 3));
 console.log(dalmuo(-18, 18, 5));
 console.log(dalmuo(-18, 18, 7));
+
+
+//-----------------------------
+
+function tusciaFunkcija () {
+    return false
+}
+
+console.log(tusciaFunkcija())
+
+//-----------------------
+
+function daugyba (nuo, iki) {
+    const sandauga =  nuo * iki;
+    return sandauga;
+}
+
+const skaicius1 = 2;
+const skaicius2 = 3;
+const skaicius3 = 4;
+
+console.log( daugyba( skaicius1, skaicius2 ) );
+console.log( daugyba( skaicius3, skaicius2 ) );
+console.log( daugyba( skaicius1, skaicius3 ) );
+
+console.clear()
+
+function skaitmenuKiekisSkaiciuje (a) {
+    let result = '';
+    if (isNaN(a)) {
+        result = ('Netinkama reiksme');
+    } else {
+        result = a.toString().length;
+    }
+    return result
+}
+
+//---------------------------
+
+function didziausiasSkaiciusSarase (a) {
+    let result = '';
+    if (Array.isArray(a) == false) {
+        result = 'Pateikta netinkamo tipo reikšmė.'
+    } else if (a.length ==0) {
+        result = 'Pateiktas sąrašas negali būti tuščias.'
+    } else {
+        result = Math.max.apply(Math, a)
+    }
+    return result
+}
+
+//-----------------------------
+
+function isrinktiRaides (a, b) {
+    let result = '';
+    if (typeof a !== 'string') {
+        result = 'ne stringas'
+    } else if (a.length == 0 && a.length < 100) {
+        result = 'Pirmojo kintamojo reikšmė yra netinkamo dydžio.'
+    } else if (isNaN(b) == true) {
+        result = 'Antrasis kintamasis yra netinkamo tipo.'
+    } else if (b <= 0) {
+        result = 'Antrasis kintamasis turi būti didesnis už nulį.'
+    } else if (b > a.length) {
+        result = 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.'
+    } else {
+        for (i = 0; i < a.length; i=i+b) {
+            result += (a[i]);}
+}
+    return result
+}
+
+//---------------------------
